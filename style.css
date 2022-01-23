@@ -1,7 +1,5 @@
 body {
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    display: flex;
-    flex-direction: column;
     margin: 0;
     padding: 0;
 }
@@ -89,6 +87,10 @@ a {
     margin-bottom: 50px;
 }
 
+.info {
+    width: 250px;
+}
+
 .extra-containers img {
     width: 200px;
     height: 200px;
@@ -100,18 +102,21 @@ a {
     display: flex;
     align-items: center;
     flex-direction: column;
-    justify-content: center;
     padding: 50px 0;
     background-color: #e5e7eb;
     color: #1f2937;
 }
 
-.quote q{
-    width: 400px;
+.quote-box {
+    width: 600px;
+    display: flex;
+    flex-direction: column;
 }
 
 .quote p{
     align-self: flex-end;
+    font-weight: bolder;
+    color: grey;
 }
 
 .action {
@@ -124,13 +129,15 @@ a {
     display: flex;
     align-items: center;
     justify-content: space-around;
+    gap: 5px;
 }
 
 .action button {
     flex-shrink: 0;
+    border: 1px solid white;
 }
 
-.action-box {
+.action-title {
     font-weight: bold;
 }
 
@@ -141,4 +148,10 @@ a {
     justify-content: center;
     align-items: center;
     padding: 30px 0;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
